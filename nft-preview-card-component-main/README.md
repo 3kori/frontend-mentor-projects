@@ -17,7 +17,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Screenshot
 
-![Desktop](images/desktop-screenshot.png)
+![Desktop](images/desktop-nftscreenshot.png)
 
 ### Links
 
@@ -34,12 +34,11 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Continued development
 
-I will continue polishing on css layout, and value & units concepts.
+I will continue polishing on css responsive design concepts.
 
 ### Useful resources
 
 - [MDN Web Docs](https://developer.mozilla.org/en-US/) - This is an reference point which helped me finally understand flexbox and positioning. I'd recommend it to anyone still learning this concept.
-- [FlexboxFroggy](https://flexboxfroggy.com/) - This is a fun interactive game which helped me finally understand flexbox. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
