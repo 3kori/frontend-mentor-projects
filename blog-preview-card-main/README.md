@@ -57,10 +57,6 @@ Below are code snippets of what I learned.
         width: 73px;
         height: 26px;
     }
-
-    .container {
-        box-shadow: 8px 8px var(--black);
-    }
 }
 
 @media(max-width: 320px){
@@ -71,10 +67,6 @@ Below are code snippets of what I learned.
     .learn-box {
         width: 82px;
         height: 29px;
-    }
-
-    .container {
-        box-shadow: 8px 8px var(--black);
     }
 }
 ```
