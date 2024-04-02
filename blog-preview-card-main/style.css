@@ -20,11 +20,16 @@ body {
 
 .container {
     background-color: var(--white);
-    margin: 155px auto;
+    margin: 218.5px auto;
     max-width: 384px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 8px 8px var(--black);
     border: 1px solid var(--black);
+}
+
+.container:hover {
+    box-shadow: 16px 16px var(--black);
+    transition: 0.5s ease-in-out;
 }
 
 .card {
@@ -106,6 +111,7 @@ p.publish-date {
 @media(max-width: 375px){
     .container {
         max-width: 327px;
+        margin: 155px auto;
     }
 
     .learn-box {
@@ -117,6 +123,7 @@ p.publish-date {
 @media(max-width: 320px){
     .container {
         max-width: 272px;
+        margin: 155px auto;
     }
 
     .learn-box {
