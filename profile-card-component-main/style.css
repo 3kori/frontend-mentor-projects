@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    width: 100vh;
+}
+
+
+
+.top-bg {
+    background-image: url(images/bg-pattern-top.svg);
+}
+
+.bottom-bg {
+    background-image: url(images/bg-pattern-bottom.svg);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+
+}
+
+.age, p {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    
+}
+
+p{
+    margin: 18px;
+}
+.stats {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heavy {
+    font-weight: 700;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.light {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+hr {
+    width: 300px;
+}
