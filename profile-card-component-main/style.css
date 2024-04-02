@@ -4,17 +4,153 @@
     padding: 0;
 }
 
+:root {
+    --white: hsl(0, 0%, 100%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --back-top: url(.images/bg-pattern-top.svg);
+    --back-bottom: url(.images/bg-pattern-bottom.svg);
+}
+
 body {
-    background-color: hsl(185, 75%, 39%);
-    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-color: var(--dark-cyan);
+    background-image:  url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 90% 90%, 90% 90%;
+    background-position-x: 168px, -101px;
+    background-position-y: 250px, -262px;
     font-family: 'Kumbh Sans', sans-serif;
     height: 100vh;
-    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 272px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow:3px 3px 40px var(--dark-grayish-blue) ;
+}
+
+.profile-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.card-pattern {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.profile-pic {
+    position: absolute;
+    border-radius: 50%;
+    width: 32%;
+    height: auto;
+    top: 32.3%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 5px solid var(--white);
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap:  24px;
+}
+
+.profile-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 24px;
+}
+
+.followers, .likes, .total-photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+   border: 0.1px solid var(--dark-gray);
+}
+
+h1 {
+    font-size: 16px;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.profile-stats p {
+    font-size: 8px;
+    color: var(--dark-grayish-blue);
+   
+}
+
+.location p {
+    color: var(--dark-grayish-blue);
+}
+
+.profile-info span {
+    color: var(--dark-grayish-blue);
+    padding-left: 5px;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 18px;
+}
+.attribution a {
+    color: hsl(0, 0%, 0%);
+}
+
+@media (min-width: 768px) {
+    body {
+        background-size: 978px 100%, 978px 100%;
+        background-position-x: 781px, -255px;
+        background-position-y: 410px, -433px;
+    }
+    
+    .container {
+        width: 384px;
+    }
+
+    .profile-pic {
+        top: 39.4%;
+        width: 28%;
+    }
+
+    .profile-card {
+        gap: 77px;
+    }
 }
 
 
 
-.top-bg {
+/* .top-bg {
     background-image: url(images/bg-pattern-top.svg);
 }
 
@@ -62,4 +198,4 @@ p{
 
 hr {
     width: 300px;
-}
+} */
