@@ -23,7 +23,8 @@ body {
     margin: 155px auto;
     max-width: 384px;
     border-radius: 10px;
-    box-shadow: 16px 16px var(--black);
+    box-shadow: 8px 8px var(--black);
+    border: 1px solid var(--black);
 }
 
 .card {
@@ -111,10 +112,6 @@ p.publish-date {
         width: 73px;
         height: 26px;
     }
-
-    .container {
-        box-shadow: 8px 8px var(--black);
-    }
 }
 
 @media(max-width: 320px){
@@ -125,9 +122,5 @@ p.publish-date {
     .learn-box {
         width: 82px;
         height: 29px;
-    }
-
-    .container {
-        box-shadow: 8px 8px var(--black);
     }
 }
