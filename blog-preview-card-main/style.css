@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+    --orange: #F5A54E;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.container {
+    background-color: var(--white);
+    margin: 155px auto;
+    max-width: 384px;
+    border-radius: 10px;
+    box-shadow: 16px 16px var(--black);
+}
+
+.card {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blog-image {
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.learn-box {
+    background-color: var(--yellow);
+    padding: 4px 12px;
+    border-radius: 4px;
+    width: 82px;
+    height: 29px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+h1:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.content > p {
+    font-size: 16px;
+}
+
+.content p:nth-child(4) {
+ color: var(--grey);
+}
+
+.learn-box-bold, .publish-date, .author-name-small {
+    font-size: 14px;
+}
+
+.learn-box-bold, .author-name-small {
+    font-weight: 800;
+}
+
+p.publish-date {
+    font-size: 14px;
+}
+
+.author-details {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.attribution {
+     font-size: 11px; text-align: center;
+     padding-bottom: 24px;
+}
+
+.attribution a { 
+    color: var(--orange);
+}
+
+@media(max-width: 375px){
+    .container {
+        max-width: 327px;
+    }
+
+    .learn-box {
+        width: 73px;
+        height: 26px;
+    }
+
+    .container {
+        box-shadow: 8px 8px var(--black);
+    }
+}
+
+@media(max-width: 320px){
+    .container {
+        max-width: 272px;
+    }
+
+    .learn-box {
+        width: 82px;
+        height: 29px;
+    }
+
+    .container {
+        box-shadow: 8px 8px var(--black);
+    }
+}
