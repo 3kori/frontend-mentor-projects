@@ -46,7 +46,7 @@ img {
 .bold {
     color: var(--dark-blue);
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -54,6 +54,7 @@ img {
     color: var(--grayish-blue);
     margin: 16px;
     font-size: 15px;
+    font-weight: 400;
     text-align: center;
 }
 
