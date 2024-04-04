@@ -41,7 +41,6 @@ img {
 .content-info {
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 
 .bold {
