@@ -1,0 +1,222 @@
+/* - Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+Weights: 500, 700, 900
+ Font size (paragraph): 16px */
+
+:root{
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --btn-active: hsl(245, 83%, 68%);
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+    --white:hsl(0, 0%, 100%);
+    --box-shadow: hsla(244.9, 76.6%, 71.6%, 0.42);
+
+    --ff: "Red Hat Display", sans-serif;
+
+    --fs-normal: 1em;
+    --fs-medium: 1.4375em;
+    --fs-small: 0.875em;
+    --fs-large: 1.75em;
+
+
+    --fw-normal: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-pale-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-y: 40px;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 768px;
+    font-family: var(--ff);
+    /* position: relative; */
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.card {
+    width: 328px;
+    height: 567px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 20px 20px -14px var(--box-shadow);
+    
+}
+
+p, a {
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-normal);
+    color: var(--neutral-desaturated-blue);
+}
+
+h1 {
+    font-size: var(--fs-medium);
+}
+
+.illustration-hero {
+    border-radius: 20px 20px 0 0;
+}
+
+.card-content {
+    padding: 32px 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 23.7px;
+    text-align: center;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.order-description {
+    line-height: 1.6;
+    margin-inline: 10px;
+}
+
+.price-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    padding: 16px;
+    background-color: var(--neutral-very-pale-blue);
+    border-radius: 10px;
+}
+
+.plan-price-box {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+}
+
+.plan-type {
+    font-weight: var(--fw-bolder);
+    color: var(--neutral-dark-blue);
+}
+
+.change-plan {
+    font-size: var(--fs-small);
+    font-weight: var(--fw-bold);
+    color: var(--primary-bright-blue);
+
+
+}
+
+.proceed-cancel-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.proceed-btn {
+    background-color: var(--primary-bright-blue);
+    padding: 16px;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: var(--fw-bold);
+    box-shadow: 0 20px 20px var(--box-shadow) ;
+}
+
+.proceed-btn:hover {
+    background-color: var(--btn-active);
+}
+
+.change-plan:hover{
+    color: var(--btn-active);
+}
+
+.cancel-btn {
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+}
+
+.cancel-btn:hover, .cancel-btn:focus{
+    color: var(--neutral-dark-blue);
+}
+
+.plan-type, .price, .change-plan, .cancel-btn {
+    font-size: var(--fs-small);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+ 
+@media (min-width: 768px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-position-y: -37px;
+    }
+
+    .card {
+        width: 450px;
+        height: 698px;   
+    }
+    
+    .card-content {
+        padding: 48px 48px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        
+    }
+
+    h1 {
+        font-size: var(--fs-large);
+    }
+
+    .price-box {
+
+        gap: 44px;
+        padding: 24px;
+    }
+
+    .plan-type, .price, .cancel-btn {
+        font-size: var(--fs-normal);
+    }
+
+    .proceed-cancel-box {
+        gap: 28px;
+    }
+}
+
+@media (max-width: 325px) {
+    .card {
+        width: 312px;
+    }
+
+    .price-box {
+        padding: 12px;
+    }
+}
