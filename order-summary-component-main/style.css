@@ -45,9 +45,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 768px;
+    min-height: 100vh;
     font-family: var(--ff);
-    /* position: relative; */
+
 }
 
 img {
