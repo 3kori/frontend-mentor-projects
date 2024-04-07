@@ -27,13 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](design/order-summary-card-desktop.webp)
-![Mobile](design/order-summary-card-mobile.webp)
+![Desktop](design/order-summary-card-desktop.png)
+![Mobile](design/order-summary-card-mobile.png)
 
 ### Links
 
 - Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://frontend-mentor-projects-liart.vercel.app/order-summary-component-main/index.html)
 
 ## My process
 
