@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/social-links-profile-ranvee3nYz)
 - Live Site URL: [Live site](https://frontend-mentor-projects-liart.vercel.app/social-links-profile-main/index.html)
 
 ## My process
