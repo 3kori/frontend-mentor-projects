@@ -1,0 +1,126 @@
+/* - Green: hsl(75, 94%, 57%)
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 20%)
+- Dark Grey: hsl(0, 0%, 12%)
+- Off Black: hsl(0, 0%, 8%)
+
+- Font size (pararaph): 14px
+- Weights: 400, 600, 700 */
+
+:root {
+    --primary-green: hsl(75, 94%, 57%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-grey: hsl(0, 0%, 20%);
+    --neutral-dark-grey: hsl(0, 0%, 12%);
+    --neutral-off-black: hsl(0, 0%, 8%);
+
+    --ff:"Inter", sans-serif;
+
+    --fs-normal: 0.875em;
+    --fs-larger: 1.5em;
+
+
+    --fw-normal:400;
+    --fw-bold: 600;
+    --fw-bolder: 700;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--ff);
+    background-color: var(--neutral-off-black);
+    color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+h1{
+    font-size: var(--fs-larger);
+    font-weight: var(--fw-normal);
+}
+
+p {
+    font-size: var(--fs-normal);
+    font-weight: var(--fs-normal);
+}
+
+.pin-location {
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-bold);
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    width:20.5rem;
+    background-color: var(--neutral-dark-grey);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6875rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.profile-thumbnail {
+    border-radius: 100%;
+    width: 88px;
+    height: 88px;
+}
+
+.social-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+}
+
+.name-location-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+.pin-location {
+    color: var(--primary-green);
+}
+
+.social-links-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.social-links-box > a {
+    background-color: var(--neutral-grey);
+    color: var(--neutral-white);
+    border-radius: 10px;
+    padding: 0.875rem;
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-bold);
+    text-decoration: none;
+}
+
+.social-links-box a:hover, .social-links-box a:focus {
+    background-color: var(--primary-green);
+    color: var(--neutral-off-black);
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 24.0625rem;
+        padding: 2.5rem;
+    }
+}
