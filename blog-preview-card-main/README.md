@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](https://github.com/3kori/frontend-mentor-projects/blob/7bb12f2294d9149a425bef7c8378882d795db57f/blog-preview-card-main/assets/images/blog-preview-card-screenshot%20copy.png)
+[![Desktop Screenshot](https://github.com/3kori/frontend-mentor-projects/blob/7bb12f2294d9149a425bef7c8378882d795db57f/blog-preview-card-main/assets/images/blog-preview-card-screenshot%20copy.png)](https://frontend-mentor-projects-liart.vercel.app/blog-preview-card-main/index.html)
 
 ### Links
 
