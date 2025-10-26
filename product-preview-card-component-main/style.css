@@ -56,6 +56,9 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     font-family: var(--ff-montserrat);
     font-size: var(--fs-small);
@@ -81,29 +84,22 @@ img {
     display: block;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .product-card-container {
     background-color: var(--neutral-white);
     width: 343px;
     height: 611px;
     border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    
 }
 
 .image-container > img {
-    width: 341px;
+    width: 343px;
     height: 241px;
-    background-image: url('/images/image-product-mobile.jpg');
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .product-description-container {
-    padding: 28px 22px;
+    padding: 24px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -118,7 +114,7 @@ main {
     display: flex;
     align-items: center;
     gap: 15px;
-    
+    text-align: center;
 }
 
 .price-box > h1 {
