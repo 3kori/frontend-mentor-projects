@@ -40,8 +40,10 @@
     --ff-montserrat: 'Montserrat', sans-serif;
     --ff-fraunces: 'Fraunces', serif;
 
-    --fs-normal: 0.875em;
+    --fs-small: 0.875em;
+    --fs-normal: 1em;
     --fs-large: 1.5em;
+    --fs-larger: 2em;
 
     --fw-normal: 500;
     --fw-bold: 700;
@@ -55,11 +57,8 @@
 
 body {
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-self: center;
     font-family: var(--ff-montserrat);
-    font-size: var(--fs-normal);
+    font-size: var(--fs-small);
     font-weight: var(--fw-normal);
     color: var(--neutral-grey);
     background-color: var(--neutral-cream);
@@ -67,39 +66,76 @@ body {
 
 h1{
     font-family: var(--ff-fraunces);
-    font-size: var(--fs-large);
+    font-size: var(--fs-larger);
     font-weight: var(--fw-bold);
     color: var(--neutral-black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--neutral-white);
 }
 
 img {
     width: 100%;
     display: block;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .product-card-container {
     background-color: var(--neutral-white);
-    width: 290px;
+    width: 343px;
+    height: 611px;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     
 }
 
-/* .image-container > img {
-    width: 100%;
+.image-container > img {
+    width: 341px;
+    height: 241px;
     background-image: url('/images/image-product-mobile.jpg');
-} */
+}
 
 .product-description-container {
-    padding: 20px;
+    padding: 28px 22px;
     display: flex;
     flex-direction: column;
-   gap: 15px;
+    gap: 15px;
 
 }
 
 .product-type {
     letter-spacing: 5px;
-    font-size: 0.75em;
 }
 
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.price-box > h1 {
+    color: var(--primary-light-green);
+}
+
+.add-to-cart-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background-color: var(--primary-light-green);
+    border-radius: 10px;
+}
+
+.add-to-cart-button > img {
+    height: 16px;
+    width: 16px;
+}
