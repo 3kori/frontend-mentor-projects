@@ -83,6 +83,14 @@ button {
     border-radius: 22px;
     background-color: var(--gray-100);
     font-family: var(--ff-body);
+    cursor: pointer;
+
+    &:hover {
+        color: var(--transparent-white);
+        background-color: transparent;
+        border: 2px solid var(--transparent-white);
+        
+    }
 }
 
 .column {
@@ -112,5 +120,18 @@ button {
 .luxury-column {
     background-color: var(--green-950);
     border-radius: 0 0 8px 8px;
+    color: var(--green-950);
+}
+
+.sedans-btn {
+    color: var(--gold-500);
+}
+
+.suvs-btn {
+    color: var(--cyan-800);
+
+}
+
+.luxury-btn {
     color: var(--green-950);
 }
