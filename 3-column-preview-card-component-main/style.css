@@ -1,0 +1,108 @@
+/* ## Colors
+
+### Primary
+
+Gold 500: hsl(31, 77%, 52%)
+Cyan 800: hsl(184, 100%, 22%)
+Green 950: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Gray 100 (background, headings, buttons): hsl(0, 0%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 */
+
+:root {
+    --gold-500: hsl(31, 77%, 52%);
+    --cyan-800: hsl(184, 100%, 22%);
+    --green-950: hsl(179, 100%, 13%);
+
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --gray-100: hsl(0, 0%, 95%);
+
+    --fs: 0.9375rem; /* 15px */
+
+    --ff-body: 'Lexend Deca', sans-serif;
+    --fw-body: 400;
+
+    --ff-heading: 'Big Shoulders', cursive;
+    --fw-heading: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fw-body);
+    font-weight: var(--fw-body);
+    font-size: var(--fs);
+    background-color: var(--gray-100);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-family: var(--ff-heading);
+    font-weight: var(--fw-heading);
+    color: var(--gray-100);
+}
+
+p {
+    font-family: var(--fw-body);
+    color: var(--transparent-white);
+}
+
+button {
+    width: 147px;
+    height: 48px;
+    border: none;
+    border-radius: 22px;
+    background-color: var(--gray-100);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.81rem;
+    width: 327px;
+    padding: 3rem;
+}
+
+.sedan-column {
+    background-color: var(--gold-500);
+    border-radius: 8px 8px 0 0;
+    color: var(--gold-500);
+}
+
+.suv-column {
+    background-color: var(--cyan-800);
+    color: var(--cyan-800);
+}
+
+.luxury-column {
+    background-color: var(--green-950);
+    border-radius: 0 0 8px 8px;
+    color: var(--green-950);
+}
