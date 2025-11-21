@@ -80,7 +80,7 @@ button {
     width: 147px;
     height: 48px;
     border: none;
-    border-radius: 22px;
+    border-radius: 24px;
     background-color: var(--gray-100);
     font-family: var(--ff-body);
     cursor: pointer;
@@ -134,4 +134,27 @@ button {
 
 .luxury-btn {
     color: var(--green-950);
+}
+
+@media (min-width: 768px) {
+    .columns {
+        display: flex;
+    }
+
+    .column {
+        width: 307px;
+        gap: 34px;
+    }
+
+    button {
+        margin-top: 52px;
+    }
+
+    .sedan-column {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxury-column {
+        border-radius: 0 8px 8px 0;
+    }
 }
