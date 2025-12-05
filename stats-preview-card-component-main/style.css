@@ -38,8 +38,8 @@
 
     --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
 
-    --font-body: 'Lexend Deca', var(--system-ui);
-    --font-heading: 'Inter', var(--system-ui);
+    --font-lxnd: 'Lexend Deca', var(--system-ui);
+    --font-inter: 'Inter', var(--system-ui);
 
     --fw-normal: 400;
     --fw-bold: 700;
@@ -54,7 +54,7 @@
 }
 
 body {
-    font-family: var(--font-body);
+    font-family: var(--font-inter);
 }
 
 img {
@@ -87,7 +87,7 @@ main {
 }
 
 .stats-description {
-    padding: 1.5rem;
+    padding: 2rem;
     background-color: var(--card-background);
 }
 
@@ -97,13 +97,15 @@ main {
 }
 
 .stats-main-heading,
-.stats-info-text {
+.stats-info-text,
+.stats {
     text-align: center;
 }
 
 .stats-main-heading {
-    font-family: var(--font-heading);
+    font-family: var(--font-inter);
     font-weight: var(--fw-bold);
+    font-size: 1.75rem;
 }
 
 .highlighted-text {
@@ -112,4 +114,17 @@ main {
 
 .stats-heading {
     color: var(--stat-headings);
+}
+
+.stats-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stats-main {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
