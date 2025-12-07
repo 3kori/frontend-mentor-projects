@@ -87,11 +87,11 @@ main {
     width: 327px;
     height: 790px;
     border-radius: 0.5rem;
+    background-color: var(--card-background);
 }
 
 .stats-description {
     padding: 2rem;
-    background-color: var(--card-background);
 }
 
 .stats-main-heading,
@@ -135,6 +135,7 @@ main {
 
 .stats-image {
     position: relative;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .overlay {
