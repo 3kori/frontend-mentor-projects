@@ -88,10 +88,14 @@ main {
     height: 790px;
     border-radius: 0.5rem;
     background-color: var(--card-background);
+    margin-top: 8px;
 }
 
 .stats-description {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2.5rem 2rem;
 }
 
 .stats-main-heading,
@@ -124,13 +128,13 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2.25rem;
 }
 
 .stats-main {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 16px;
 }
 
 .stats-image {
@@ -147,7 +151,7 @@ main {
     background-color: var(--overlay-color);
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .stats-card {
         display: flex;
         flex-direction: row-reverse;
@@ -167,4 +171,4 @@ main {
         flex-direction: row;
         justify-content: space-between;
     }
-}
+} */
