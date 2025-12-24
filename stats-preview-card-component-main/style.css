@@ -85,7 +85,6 @@ main {
 
 .stats-card {
     width: 327px;
-    height: 790px;
     border-radius: 0.5rem;
     background-color: var(--card-background);
     margin-top: 8px;
@@ -94,13 +93,19 @@ main {
 .stats-description {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 2.8rem;
     padding: 2.5rem 2rem;
 }
 
 .stats-main-heading,
 .stats {
     color: var(--main-heading-stats);
+}
+
+.stats-image,
+.preview-image,
+.overlay {
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .stats-main-heading,
@@ -121,20 +126,27 @@ main {
 
 .stats-heading {
     color: var(--stat-headings);
-    font-size: 0.9375rem;
+    font-size: 0.75rem;
+    letter-spacing: 1.3px;
 }
 
 .stats-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2.25rem;
+    gap: 1.5rem;
 }
 
 .stats-main {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
+}
+
+.individual-stat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .stats-image {
