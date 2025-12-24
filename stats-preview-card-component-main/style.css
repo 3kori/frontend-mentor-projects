@@ -163,6 +163,18 @@ main {
     background-color: var(--overlay-color);
 }
 
+    .attribution { 
+        padding: 1rem 0;
+        background-color: var(--main-background);
+        color: var(--main-paragraph);
+        font-size: 11px; 
+        text-align: center; 
+    }
+
+    .attribution a {
+        color: var(--main-heading-stats);
+    }
+
 /* @media (min-width: 768px) {
     .stats-card {
         display: flex;
